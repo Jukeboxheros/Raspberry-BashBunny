@@ -21,11 +21,11 @@ WAIT_TARGET 120
 exitCode=$?
 if [ $exitCode -eq 0 ]; then
 	# The target has written a file called target_finished in the root of the storage device. We are happy!
-	LED RED OFF
+	LED BLUE OFF
 	LED GREEN ON
 else
 	# We never heard from the target. Something went wrong!
 	LED GREEN OFF
-	LED RED FAST
+	LED BLUE FAST
 fi
 
